@@ -1,0 +1,242 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    @include BodySet ("Montserrat", 1.6rem, 400,1.5 )
+}
+
+h1 {
+    @include FontSetting (3.6rem, 600, 1.2);
+    color:$light-background-color;
+}
+
+h2 {
+   
+    @include FontSetting (3.6rem, 600, 1.2);
+}
+
+h3 {
+    @include FontSetting (3.2rem, 500, 1.2);
+}
+
+h4 {
+    @include FontSetting (1.6rem, 600, 1.2);
+}
+
+.btn {
+    @include GlobalBtnSet (100px, 2px solid)
+}
+
+
+
+.container {
+    width:100%;
+    max-width:1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block   ;
+}
+
+.border {
+    border:1.5px solid #E5E7EA;
+    margin-top: 2.7rem;
+}
+
+ol,ul li {
+    list-style: none;
+}
+
+.ahead__container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.site-logo {
+   padding-top: 2.7rem;
+   margin-right: 2rem;
+}
+
+.site-logo__image {
+
+}
+
+.categories {
+    margin-top: 1.8rem;
+    
+}
+
+.categories__text {
+    padding-top:1.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    color:$dark-background-color;
+}
+
+.about-us {
+    margin-top: 1.8rem;
+   
+}
+
+.about-us__categ {
+   display: flex;
+   padding-top: 1.8rem;
+   padding-bottom: 1.8rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   color:$dark-background-color;
+   gap: 8px;
+}
+
+.help__center {
+    margin-top: 1.8rem;
+    margin-right: auto;
+   
+}
+
+.Help-center__categ {
+    display: flex;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    color:$dark-background-color;
+    gap: 8px;   
+}
+
+.dark__mode {
+    margin-top: 1.8rem;
+    margin-right: 1.6rem;
+    
+}
+
+.tel__number {
+  margin-top: 1.8rem;
+  margin-right: 2.4rem;
+  color:$dark-background-color;
+}
+
+.dark__mode__btn {
+    padding:1.8rem 2.3rem;
+    background-color: #f5f5f5;
+    border-radius:50%;
+}
+
+.dark__mode__image {
+
+}
+
+.btn_in {
+    margin-top: 1.8rem;
+
+}
+
+.login__btn {
+   display: flex;
+   padding: 1.5rem 3rem;
+   background-color: #299764;
+   color:#fff;
+}
+
+.inlogin {
+    display: flex;
+    gap: 8px;
+}
+
+.login__btn__image {
+}
+
+
+.car__slide {
+
+}
+
+.car__slide__container {
+    margin-top: 2rem;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.for__background__image {
+    height:500px;
+    background-image: url(../../images/Download\ wallpapers\ Chevrolet\ Malibu\,\ 2019\,\ sedan\,\ business\ class\,\ new\ gray\ Malibu\,\ American\ cars\,\ 4k\,\ exterior\,\ Chevrolet\ for\ desktop\ free_\ Pictures\ for\ desktop\ free.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+}
+.car__slide__title {
+    padding-top: 6rem;
+    margin-bottom: 1rem;
+}
+.car__slide__subtitle {
+    color:$light-background-color;
+}
+.left__right__icons {
+    position: relative;
+    left: 500px;
+    top:250px;
+    justify-content: center;
+    display: flex;
+    gap: 12px;
+}
+.left__icon {
+    padding:8px 13px;
+    background-color: #f5f5f5;
+    border-radius:50%;
+    align-items: center;
+    justify-content: center;
+}
+.right__icon {
+    padding:8px 13px;
+    background-color: #f5f5f5;
+    border-radius:50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__search {
+    position: relative;
+    top: 260px;
+    left:300px;
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+    background-color:#fff;
+    width:600px;
+    border-radius: 100px;
+
+}
+.slide__input {
+    margin-left: 3rem;
+    border:none;
+    outline: none;
+    width:580px;
+}
+
+.slide__input :focus {
+    border:1px solid #ccc;
+    box-shadow:none;
+}
+
+.slide__searching__icon {
+    padding:17px 20px;
+    border-radius: 50%;
+    background-color: #299764;
+}

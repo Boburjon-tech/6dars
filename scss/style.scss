@@ -1,0 +1,24 @@
+@import "utils/variables";
+
+// Import Utilities
+@import "utils/functions";
+@import "utils/mixins";
+
+// Import Base Styles
+@import "base/reset";
+@import "base/typography";
+
+// Import Components
+@import "components/buttons";
+
+// Import Layout
+@import "layout/footer";
+@import "layout/header";
+
+// Import Pages
+@import "pages/contact";
+@import "pages/home";
+
+// Import Vendors
+@import "vendors/normalize";
+
