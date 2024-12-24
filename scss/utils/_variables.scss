@@ -21,8 +21,7 @@ $light-border-color: #e0e0e0; // Border for cards and sections
 $light-hover-color: #019a76; // Button hover effect
 $light-link-color: #0984e3; // Link color
 $light-footer-background: #f1f1f1; // Footer background
-$main-ff: "Montserrat", sans-serif;
-$rainbow-colors: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+
 @mixin theme($mode) {
   @if $mode == "dark" {
     --primary-color: #{$dark-primary-color};

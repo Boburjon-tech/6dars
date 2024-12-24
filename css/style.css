@@ -1,4 +1,4 @@
-* {
+*::after, *::before, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +7,20 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #00b894;
+  --secondary-color: #000000;
+  --background-color: #ffffff;
+  --card-background-color: #f9f9f9;
+  --text-color: #2d3436;
+  --muted-text-color: #636e72;
+  --border-color: #e0e0e0;
+  --hover-color: #019a76;
+  --link-color: #0984e3;
+  --footer-background: #f1f1f1;
 }
 
 body {
@@ -15,6 +29,19 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #000;
+}
+
+body.dark-mode {
+  --primary-color: #00b894;
+  --secondary-color: #ffffff;
+  --background-color: #121212;
+  --card-background-color: #1e1e1e;
+  --text-color: #dfe6e9;
+  --muted-text-color: #636e72;
+  --border-color: #2d2d2d;
+  --hover-color: #019a76;
+  --link-color: #74b9ff;
+  --footer-background: #181818;
 }
 
 h1 {
@@ -132,8 +159,9 @@ ol, ul li {
   color: #121212;
 }
 
-.dark__mode__btn {
-  padding: 1.8rem 2.3rem;
+.dark__mode__image {
+  margin-top: 8px;
+  padding: 1.8rem;
   background-color: #f5f5f5;
   border-radius: 50%;
 }
@@ -162,7 +190,7 @@ ol, ul li {
 
 .for__background__image {
   height: 500px;
-  background-image: url(../../images/Download\ wallpapers\ Chevrolet\ Malibu\,\ 2019\,\ sedan\,\ business\ class\,\ new\ gray\ Malibu\,\ American\ cars\,\ 4k\,\ exterior\,\ Chevrolet\ for\ desktop\ free_\ Pictures\ for\ desktop\ free.jpeg);
+  background-image: url(../../images/benz-1920x1080.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2rem;
@@ -187,19 +215,26 @@ ol, ul li {
 }
 
 .left__icon {
-  padding: 8px 13px;
-  background-color: #f5f5f5;
-  border-radius: 50%;
   align-items: center;
   justify-content: center;
 }
 
-.right__icon {
-  padding: 8px 13px;
+.left__icon__image {
+  transform: rotate(180deg);
+  padding: 8px;
   background-color: #f5f5f5;
   border-radius: 50%;
+}
+
+.right__icon {
   align-items: center;
   justify-content: center;
+}
+
+.right__icon__image {
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
 }
 
 .input__search {
@@ -208,10 +243,12 @@ ol, ul li {
   left: 300px;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 3px;
   background-color: #fff;
   width: 600px;
   border-radius: 100px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  height: 6.6rem;
 }
 
 .slide__input {
@@ -221,19 +258,30 @@ ol, ul li {
   width: 580px;
 }
 
+.slide__input placeholder {
+  font-size: 1.8rem;
+}
+
 .slide__input :focus {
   border: 1px solid #ccc;
   box-shadow: none;
 }
 
 .slide__searching__icon {
-  padding: 17px 20px;
+  margin-top: 0.1rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.search__icon {
+  padding: 17px;
   border-radius: 50%;
   background-color: #299764;
 }
 
 .choose {
   margin-top: 13.3rem;
+  margin-bottom: 16rem;
 }
 
 .choose__abouts {
@@ -381,41 +429,119 @@ ol, ul li {
 }
 
 .comments {
-  background-color: #f5f5f5;
   margin-bottom: 16rem;
 }
 
 .comments__container {
   display: flex;
+  background-color: #f5f5f5;
 }
 
 .comments__about {
   background-color: #fff;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  margin-top: 7rem;
+  margin-left: 12rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .about__google__link {
   display: flex;
   gap: 8px;
   margin-bottom: 1.6rem;
+  margin-top: 7rem;
+  margin-left: 7rem;
 }
 
 .about__title {
   margin-bottom: 3rem;
+  margin-left: 7rem;
 }
 
 .about__border {
   width: 33rem;
+  margin-left: 7rem;
   border: 1.5px solid transparent;
-  border-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  border-color: #e5e7ea;
+  margin-right: 7rem;
+}
+
+.about__subtitle {
+  margin-left: 7rem;
+  font-family: "Montserrat-500", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0%;
+  color: #555;
+  margin-top: 3rem;
+  margin-bottom: 1.6rem;
+}
+
+.instagram__btn {
+  margin-left: 7rem;
+  padding: 18px 5rem;
+  margin-bottom: 8.8rem;
+  color: red;
+  border-color: red;
 }
 
 .person__comments {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   background-color: #299764;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.for__background__white {
+  background-color: #fff;
+  margin-top: 5rem;
+  margin-left: 4rem;
+  border-radius: 1.6rem;
+  margin-right: 4rem;
+}
+
+.about__account {
+  margin-left: 2.4rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.name__and__email {
+  margin-right: 6.6rem;
+}
+
+.acoounts__link {
+  margin-right: 2.4rem;
+}
+
+.acoount__comment {
+  margin-left: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.account__border {
+  border: 1.5px solid;
+  border-color: #e5e7ea;
+  width: 372px;
+  margin-left: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.star__rating {
+  margin-left: 2.4rem;
+  display: flex;
+}
+
+.rating__text {
+  align-items: center;
+  margin-right: 1.6rem;
+}
+
+.stars {
+  gap: 7.5px;
+  margin-bottom: 2.4rem;
 }
 
 .brends__subtitle {
@@ -629,20 +755,43 @@ ol, ul li {
   font-size: 1.4rem;
 }
 
-.list__socials {
+.socials__list {
   display: flex;
   gap: 1.5rem;
 }
-.list__socials .tables__all__title {
-  margin-bottom: 2.2rem;
-}
-.list__socials li {
+
+.socials__link {
   background-color: #000;
   border-radius: 50%;
 }
-.list__socials li a {
-  align-items: center;
-  padding: 1rem;
+
+.socials__link:nth-child(1) {
+  padding: 1rem 1.2rem;
+}
+
+.socials__link:nth-child(2) {
+  padding: 13px 1.3rem 11.4px 13px;
+}
+
+.socials__link:nth-child(3) {
+  padding: 8px 15px 9px 15px;
+}
+
+.socials__link:nth-child(4) {
+  padding: 10px 10px 10px 10px;
+}
+
+.button__div {
+  position: relative;
+  left: 120px;
+  top: 22px;
+}
+
+.to__up {
+  padding: 27px;
+  border-radius: 50%;
+  border-color: #299764;
+  background-color: #299764;
 }
 
 /* montserrat-regular - latin */

@@ -6,7 +6,7 @@
     <title>hi</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="dark-mode">
     <!-- HEADER HTML -->
     <header class="header">
       <div class="ahead__container container">
@@ -19,14 +19,20 @@
         <a class="tel__number" href="">+1 855 420 0000</a>
         
         <div class="dark__mode">
-          <a class="dark__mode__btn" href="#"><img class="dark__mode__image" src="./images/Moon.svg" alt="" ></a>
+          <a id="theme-toggler" class="dark__mode__btn" href="#"><img class="dark__mode__image" src="./images/Moon.svg" alt="" ></a>
         </div>
         <div class="btn_in">
         <a class="login__btn btn" href="#"><div class="inlogin"><p>Login</p><img class="login__btn__image" src="./images/Login.png" alt=""></div></a>
       </div>
       </div>
       
+      
       <div class="border"></div>
+
+     
+    </header>
+    <!-- MAIN HTML -->
+     <main class="main">
       <section class="car__slide">
         
         <div class="car__slide__container container">
@@ -35,12 +41,12 @@
           <h1 class="car__slide__title">Compact cars</h1>
           <p class="car__slide__subtitle">Rent cars as you are comfortable and where you are <br> comfortable.</p>
           <div class="left__right__icons">
-            <a class="left__icon" href="#"> <img src="./images/Caret right.svg" alt="to left"></a>
-            <a class="right__icon" href="#"><img src="./images/Caret right.svg" alt="to right"></a>
+            <a class="left__icon" href="#"> <img class="left__icon__image" src="./images/Caret right.svg" alt="to left"></a>
+            <a class="right__icon" href="#"><img class="right__icon__image" src="./images/Caret right.svg" alt="to right"></a>
           </div>
           <div class="input__search">
           <input type="text" class="slide__input" placeholder="Find the car of your dreams">
-          <a class="slide__searching__icon" href="#"><img src="./images/Search.png" alt=""></a>
+          <a class="slide__searching__icon" href="#"><img class="search__icon" src="./images/Search.png" alt=""></a>
           </div>
           </div>
         </div>
@@ -226,6 +232,7 @@
       </section>
 
       <section class="comments">
+        
         <div class="comments__container container">
           <div class="comments__about">
             <a href="" class="about__google__link"><img src="./images/Google.png" alt="google"> <p>From Google</p></a>
@@ -235,13 +242,14 @@
             <a href="" class="instagram__btn btn">Instagram</a>
           </div>
           <div class="person__comments">
+            <div class="for__background__white">
             <div class="about__account">
-              <img  style="border-radius: 50%;" src="./images/Ava.png" alt="" width="42" height="42">
+              <img  style="border-radius: 50%; margin-right: 1.2rem;" src="./images/Ava.png" alt="" width="42" height="42">
               <div class="name__and__email">
                 <h3 class="name">Savannah Nguyen</h3>
                 <p class="email">savannahnguyen@gmail.com</p>
               </div>
-              <a href="" class="acoounts__link"><img src="./images/Google.png" alt=""></a>
+              <a href="" class="acoounts__link"><img src="./images/Google.png" alt="" width="42" height="42"></a>
             </div>
 
             <p class="acoount__comment">Sagittis sed tortor, elementum vitae varius sodales <br> consectetur. Vitae arcu ut morbi bibendum <br> ullamcorper feugiat. Venenatis hendrerit cursus <br> egestas sit ornare nunc vulputate aliquam sapien. <br> Pulvinar nunc consectetur nibh consectetur mollis <br> mauris est mauris amet. Sed hac vehicula id et dui <br> morbi quam pulvinar condimentum. Senectus sed <br> varius interdum nunc, arcu vulputate massa.</p>
@@ -250,7 +258,7 @@
 
 
             <div class="star__rating">
-              <h4 class="rating__text"></h4>
+              <h4 class="rating__text">star rating:</h4>
               <div class="stars">
                 <img src="./images/Star.png" alt="">
                 <img src="./images/Star.png" alt="">
@@ -259,6 +267,7 @@
                 <img src="./images/Star.png" alt="">
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -297,19 +306,19 @@
 
             <div class="stage2"> <div class="first__line">
               <h3 class="stage__name">Guaranteed car <br> reservation</h3>
-              <img src="./images/safety.png" alt="" width="60" height="60">
+              <img src="./images/safety.png" alt="" width="40" height="40">
             </div>
             <p class="servise__subtitle">When you book with Car rental, you can be <br> confident your car will be waiting for you</p></div>
 
 
             <div class="stage3"> <div class="first__line">
               <h3 class="stage__name">Unparalleled <br> customer service</h3>
-              <img src="./images/avatartime.png" alt="" width="60" height="60">
+              <img src="./images/avatartime.png" alt="" width="40" height="40">
             </div>
             <p class="servise__subtitle">We're here to help. We pride ourselves in <br> our customer service</p></div>
             <div class="stage4"> <div class="first__line">
               <h3 class="stage__name">No reservation or <br> booking fees</h3>
-              <img src="./images/koshelok.png" alt="" width="60" height="60">
+              <img src="./images/koshelok.png" alt="" width="50" height="40">
             </div>
             <p class="servise__subtitle">No cancellation fees if cancelled 24 hours <br> prior to booking time</p></div>
           </div>
@@ -350,96 +359,97 @@
         </div>
       </div>
       </section>
-
-      <section class="socials">
-        <div class="socials__container container">
-          <div class="logo__table">
-            <a href="" class="site__logo"><img class="site-logo_image" src="./images/Logo.svg" alt=""></a>
-            <p class="logo__subtitle">Car rental offers a wide range of cars <br> available for rent in Newark EWR <br> Airport NJ. We pride ourselves in our <br> customer service, and hassle-free <br> renting experience.</p>
-            <h4 class="logo__site__coudok">
-              © 2022 Car rental <br> Terms & Conditions
-            </h4>
-          </div>
-
-          <div class="site__abouts">
-            <nav>
-              <ul class="first__line__lists">
-                <li class="main__table">
-                  <h3 class="tables__all__title">Main</h3>
-                  <ul class="intable__list">
-                    <li class="intable__item"><a href="#">My Bookings</a></li>
-                    <li class="intable__item"><a href="#">Reservation</a></li>
-                  </ul>
-                </li>
-
-                <li class="categories__table">
-                  <h3 class="tables__all__title">Categories</h3>
-                  <ul class="intable__list">
-                    <li class="intable__item"><a href="#">Compact</a></li>
-                    <li class="intable__item"><a href="#">Sports cars</a></li>
-                    <li class="intable__item"><a href="#">Vans </a></li>
-                  </ul>
-                </li>
-
-                <li class="company__table">
-                  <h3 class="tables__all__title">Company</h3>
-                  <ul class="intable__list">
-                    <li class="intable__item"><a href="#">About us</a></li>
-                    <li class="intable__item"><a href="#">Careers</a></li>
-                    <li class="intable__item"><a href="#">News</a></li>
-                    <li class="intable__item"><a href="#">Contact us</a></li>
-                  </ul>
-                </li>
-
-                <li class="locations__table">
-                  <h3 class="tables__all__title">Our Locations</h3>
-                  <ul class="intable__list">
-                    <li class="intable__item"><a href="#">2118 Thornridge Cir. Syracuse</a></li>
-                    <li class="intable__item"><a href="#">4140 Parker Rd. Allentown</a></li>
-                    <li class="intable__item"><a href="#">4517 Washington Ave.</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="footer__border"></div>
-
-            <nav>
-              <ul class="second__line__lists">
-                <li class="contact__table">
-                  <h3 class="tables__all__title">Contact</h3>
-                  <a href="#">+1 855 420 0000</a>
-                  <a href="#">carrental@gmail.com</a>
-                </li>
-
-                <li class="operations__times__table">
-                  <h3 class="tables__all__title">Hours of operation</h3>
-                  <p>8:00 - 21:00 Mon-Sat </p>
-                  <p>9:00 - 15:00 Sundays</p>
-                </li>
-
-                <li class="socials__network__table">
-                  <h3 class="tables__all__title">Social network</h3>
-                 <ul class="list__socials">
-                  
-                  <li><a href="#"><img src="./images/instagram.png" alt=""></a></li>
-                  <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
-                  <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
-                  <li><a href="#"><img src="./images/whatsup.png" alt=""></a></li>
-                 </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </section>
-    </header>
-    <!-- MAIN HTML -->
-     <main class="main">
-
      </main>
+
+
+
      <!-- FOOTER HTML -->
       <footer class="footer">
+        <section class="socials">
+          <div class="socials__container container">
+            <div class="logo__table">
+              <a href="" class="site__logo"><img class="site-logo_image" src="./images/Logo.svg" alt=""></a>
+              <p class="logo__subtitle">Car rental offers a wide range of cars <br> available for rent in Newark EWR <br> Airport NJ. We pride ourselves in our <br> customer service, and hassle-free <br> renting experience.</p>
+              <h4 class="logo__site__coudok">
+                © 2022 Car rental <br> Terms & Conditions
+              </h4>
+            </div>
+  
+            <div class="site__abouts">
+              <nav>
+                <ul class="first__line__lists">
+                  <li class="main__table">
+                    <h3 class="tables__all__title">Main</h3>
+                    <ul class="intable__list">
+                      <li class="intable__item"><a href="#">My Bookings</a></li>
+                      <li class="intable__item"><a href="#">Reservation</a></li>
+                    </ul>
+                  </li>
+  
+                  <li class="categories__table">
+                    <h3 class="tables__all__title">Categories</h3>
+                    <ul class="intable__list">
+                      <li class="intable__item"><a href="#">Compact</a></li>
+                      <li class="intable__item"><a href="#">Sports cars</a></li>
+                      <li class="intable__item"><a href="#">Vans </a></li>
+                    </ul>
+                  </li>
+  
+                  <li class="company__table">
+                    <h3 class="tables__all__title">Company</h3>
+                    <ul class="intable__list">
+                      <li class="intable__item"><a href="#">About us</a></li>
+                      <li class="intable__item"><a href="#">Careers</a></li>
+                      <li class="intable__item"><a href="#">News</a></li>
+                      <li class="intable__item"><a href="#">Contact us</a></li>
+                    </ul>
+                  </li>
+  
+                  <li class="locations__table">
+                    <h3 class="tables__all__title">Our Locations</h3>
+                    <ul class="intable__list">
+                      <li class="intable__item"><a href="#">2118 Thornridge Cir. Syracuse</a></li>
+                      <li class="intable__item"><a href="#">4140 Parker Rd. Allentown</a></li>
+                      <li class="intable__item"><a href="#">4517 Washington Ave.</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+  
+              <div class="footer__border"></div>
+  
+              <nav>
+                <ul class="second__line__lists">
+                  <li class="contact__table">
+                    <h3 class="tables__all__title">Contact</h3>
+                    <a href="#">+1 855 420 0000</a>
+                    <a href="#">carrental@gmail.com</a>
+                  </li>
+  
+                  <li class="operations__times__table">
+                    <h3 class="tables__all__title">Hours of operation</h3>
+                    <p>8:00 - 21:00 Mon-Sat </p>
+                    <p>9:00 - 15:00 Sundays</p>
+                  </li>
+  
+                  <li class="socials__network__table">
+                    <h3 class="tables__all__title">Social network</h3>
+                    <div class="socials__list">
+                      <a class="socials__link" href="#"><img class="socials__img" src="./images/instagram.png" alt=""></>
+                      <a class="socials__link" href="#"><img class="socials__img" src="./images/twitter.png" alt=""></a>
+                      <a class="socials__link" href="#"><img class="socials__img" src="./images/facebook.png" alt=""></a>
+                      <a class="socials__link" href="#"><img class="socials__img" src="./images/whatsup.png" alt=""></a>
+                    </div>
+                  </li>
+                  <div class="button__div">
+                  <button class="to__up"><img src="./images/to upp.png" alt=""></button>
+                </div>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
       </footer>
+      <script src="./js/app.js"></script>
   </body>
 </html>
