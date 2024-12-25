@@ -1,5 +1,5 @@
-const themeToggler = document.getElementById('theme-toggler')
+const themeToggler = document.getElementById("theme-toggler");
 
-themeToggler.addEventListener('click', () => {
-    document.body.classList.toggle("dark-mode");
-})
+themeToggler.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
